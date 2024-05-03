@@ -9,4 +9,21 @@ erDiagram
     USER ||--o{ RECIPE : has
     RECIPE ||--|{ INGREDIENT : has
 
+    USER {
+        string userId
+        string username
+        string email
+        string encryptedPassword
+    }
+    RECIPE {
+        string title
+        string description
+        string steps
+        string recipe_ingredient_id
+    }
+    INGREDIENT {
+        string name
+        string unit
+        string recipe_ingredient_id
+    }
 ```
