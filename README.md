@@ -16,12 +16,14 @@ erDiagram
         string encryptedPassword
     }
     RECIPE {
+        string recipeId
         string title
         string description
         string steps
         string recipe_ingredient_id
     }
     INGREDIENT {
+        string ingredientId
         string name
         string unit
         string recipe_ingredient_id
